@@ -1,0 +1,525 @@
+@import url(fontawesome-all.min.css);
+*, *::before, *::after, html {
+    box-sizing: border-box;
+    /*margin: 0;
+    padding: 0;*/
+}
+body {
+    background-color: #3d155f;
+}
+/*header*/
+.head {
+    position: relative;
+}
+.head img {
+    width: 100%;
+}
+.top {
+    position: absolute;
+    top: 0;
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color: #f1f1f1;
+}
+.top .lay {
+    display: flex;
+    justify-content: space-between;
+}
+.lay h2 {
+    padding: 0.5rem;
+    margin-left: 4rem;
+    align-self: start;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.lay nav {
+    margin: 1rem 1rem 0 0rem;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+li a {
+    display: block;
+    padding: 0.2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#code {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 7rem;
+    line-height: 2rem;
+    height: 100%;
+}
+#code h1 {
+    margin: 3rem 0 2.5rem 0;
+    font-size: 3rem;
+    text-align: center;
+    padding: .5rem;
+}
+#code p {
+    font-size: 1.5rem;
+}
+#code div {
+    display: inline-block;
+}
+#code div .button1 {
+    padding: 0.8rem;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+}
+div .button2 {
+    padding: 0.8rem;
+    display: inline-block;
+    margin-left: -0.25rem;
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .head img {
+        width: 100%;
+        height: 100vh;
+    }
+    .lay {
+        align-items: center;
+        justify-content: space-around;
+    }
+    .lay h2 {
+        margin-left: -2rem;
+        width: 50%;
+        text-align: center;
+        font-size: 3rem;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        padding: 0.1rem;
+        margin: 0.15rem;
+    }
+    #code {
+        height: auto;
+    }
+    #code h1 {
+        margin: 2rem 0 1.5rem 0;
+        font-size: 2rem;
+    }
+    #code p {
+        font-size: 1rem;
+    }
+    #code div .button1, div .button2 {
+        padding: 0.4rem;
+    }
+}
+/*@media (width: 400px) {
+    .lay {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .lay h2 {
+        margin-left: auto;
+        font-size: 2rem;
+    }
+    nav ul li {
+        padding: 0.1rem;
+        margin: 0.15rem;
+    }
+}*/
+/*main content*/
+#main {
+    color: #df678c;
+    /*background-color: #3d155f;*/
+}
+/*home*/
+.home h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.home .column {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*column-count: 3;
+    column-gap: 2rem;
+    column-width: 4rem;*/
+}
+.column span {
+    display: block;
+    margin: auto;
+    width: 10%;
+    color: dodgerblue;
+}
+.column p {
+    margin: 0.8rem auto;
+    width: 70%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.column a {
+    display: block;
+    margin: auto;
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+/*photo*/
+.photo {
+    background-color: rgb(39, 39, 39, 0.1);
+}
+.photo h3 {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.photo .upper, .lower {
+    display: flex;
+    width: 100%;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+}
+.photo .upper img, .lower img{
+    display: block;
+    width: 25rem;
+    height: 19rem;
+    padding: 0.5rem   
+}
+@media (max-width: 768px) {
+    .photo .upper img, .lower img {
+        width: 10rem;
+        height: 8rem;
+    }
+}
+/*portfolio*/
+#portfolio .contain {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.contain .work {
+    width: 60%;
+    margin: 0rem 0 1rem 2rem;
+    line-height: 2rem;
+}
+.contain img {
+    width: 27rem;
+    height: 20rem;
+    margin-top: 2rem;
+}
+/*why work with us*/
+.work h3 {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-bottom: 2px solid dodgerblue;
+    padding: 0.5rem;
+}
+.work p {
+    margin-top: -1rem;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.work ul {
+    list-style-type: none;
+}
+.work ul li span {
+    color: dodgerblue;
+}
+/*icons*/
+#portfolio .icons {
+    clear: both;
+    position: relative;
+}
+.icons img {
+    width: 100%;
+    height: 50vh;
+}
+.tan {
+    position: absolute;
+    top: 0;
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tan span {
+    display: inline-block;
+    margin: auto;
+   /* width: 10%;*/
+    color: dodgerblue;
+}
+.tan p {
+    text-align: center;
+    line-height: 2rem;
+}
+@media (max-width: 768px) {
+    .contain .work {
+        width: 50%;
+        margin: 1rem;
+        padding: 0;
+        line-height: 1rem;
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .work h3 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .work ul {
+        margin: 0;
+        padding: 0;
+    }
+    .work p {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .contain .img {
+        width: 22.5rem;
+        height: inherit;
+        align-self: center;
+        margin-right: 0.25rem;
+    }
+    .contain .img img {
+        width: 22rem;
+        height: ;
+    }
+    #portfolio .icons {
+        margin-top: 1.5rem;
+    }
+}
+/*services*/
+#services h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+#services .offer {
+    column-count: 3;
+    column-gap: 2rem;
+}
+.offer p {
+    display: inline-block;
+    line-height: 1.5rem;
+}
+.offer p span {
+    color: dodgerblue;
+}
+.price .pro {
+    display: flex;
+    justify-content: space-around;
+}
+.pro p {
+    line-height: 2rem;
+    text-align: center;
+}
+.pro p span {
+    color: rgb(9, 130, 252);
+    font-weight: bold;
+}
+.pro p a {
+    text-decoration: none;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+#sect {
+    margin: 2rem auto;
+}
+#sect > img {
+    height: 65vh;
+}
+.deep, .row {
+    display: flex;
+    justify-content: space-around;
+}
+.deep figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.deep figure figcaption {
+    margin-left: 1.5rem;
+}
+.deep figure img {
+    border-radius: 50%;
+    width: 15rem;
+}
+.row > p {
+    width: 30%;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+}
+@media (max-width: 768px) {
+    #servives {
+        margin-top: 2rem;
+    }
+    #sect > img {
+        height: 70vh;
+    }
+    .deep figure img {
+        width: 5rem;
+        height: 6.5rem;
+    }
+    .deep figure figcaption {
+        margin-left: 0.5rem;
+    }
+    .row > p {
+        width: 60%;
+    }
+}
+/*about*/
+#about h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+#about .team {
+    display: flex;
+    justify-content: space-around;
+}
+.team .img, .blog {
+    border: 1px solid #ccc;
+}
+.team .img img {
+    width: 100%;
+    height: auto;
+}
+.desc, .blog {
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(199, 193, 193, 0.5);
+    line-height: 1.8rem;
+}
+@media (max-width: 768px) {
+    .team .img {
+        margin-left: 1rem;
+    }
+}
+.blog figure img {
+    width: 18rem;
+    height: 10rem;
+    padding: 0.5rem;
+}
+.fig span {
+    color: dodgerblue;
+    margin-left: 1.5rem;
+}
+.fig span strong {
+    color: black;
+}
+.blog {
+    margin-left: 1rem;
+}
+.blog a {
+    display: inline-block;
+    text-decoration: none;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+    padding: 0.5rem;
+}
+@media (max-width: 768px) {
+    #some {
+        flex-direction: column;
+    }
+    .blog {
+        margin: 1rem auto;
+        width: 90%;
+    }
+    .blog figure img {
+        width: 22rem;
+    }
+}
+/*contact*/
+#contact {
+    margin-top: 2rem;
+}
+#contact h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+#contact .plan {
+    display: flex;
+    justify-content: space-around;
+}
+.plan p {
+    text-align: center;
+    line-height: 2rem;
+}
+.plan p span {
+    color: dodgerblue;
+    font-weight: bold;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    /*border: 1px solid blue;*/
+}
+form input, textarea {
+    display: block;
+    width: inherit;
+    margin: auto;
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(163, 162, 162);
+    outline: none;
+}
+input:focus, textarea:focus {
+    border: 1px solid dodgerblue;
+}
+#submit {
+    display: inline-block;
+    background-color: dodgerblue;
+    color: rgb(255, 255, 255);
+    width: 50%;
+}
+.foot {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.foot .headings {
+    padding: 1rem;
+    font-size: 1.7rem;
+}
+.icons a {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+.icons a span {
+    color: dodgerblue;
+    font-size: 1.5rem;
+}
+.copy {
+    padding: 0 0 2rem 0;
+}
+.copy a {
+    text-decoration: none;
+    color: dodgerblue;
+}
